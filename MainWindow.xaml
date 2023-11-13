@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfAppAuthentication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppAuthentication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Введите логин и пароль" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10, 10, 10, 0" Cursor="SizeAll" Foreground="#FFE51D1D"/>
+        <Label Content="Логин" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 50, 0, 0"/>
+        <TextBox Name="usernameTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80, 50, 10, 0" Width="200" Height="30"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 90, 0, 0"/>
+        <PasswordBox Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80, 90, 10, 0" Width="200" Height="30"/>
+        <Button Content="Войти" Click="LoginButton_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10, 130, 10, 0" Width="100" Height="40"/>
+        <TextBlock Name="messageTextBlock" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10, 170, 10, 0"/>
+    </Grid>
+</Window>
